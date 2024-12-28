@@ -1,0 +1,196 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: right;
+}
+
+/* Main styles */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: right;
+    padding: 10px;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.carImage {
+    height: 140px;
+    width: 200px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    header {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: right;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .carImage {
+        height: 100px;
+        width: 140px;
+    }
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  outline: none;
+  border: 2px solid #4CAF50;
+}
+
+button[name="submit"] {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button[name="submit"]:hover {
+  background-color:#3e8e41;
+}
+
+input[type="button"],
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 20px;
+
+}
+
+#txtCaptcha,
+#txtCompare {
+width: 50%;
+padding: 10px;
+margin-bottom: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 16px;
+display: inline-block;
+}
+#carid {
+  display: block; /* Make the image a block element for easier positioning */
+  margin: 0 auto; /* Center the image horizontally */
+  border: 2px solid #ccc; /* Add a border to the image */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a box shadow to the image */
+  border-radius: 5px; /* Add rounded corners to the image */
+  transition: transform 0.3s ease-in-out; /* Add a transition effect to the image */
+}
+
+#carid:hover {
+  transform: scale(1.1); /* Scale the image up slightly on hover */
+}
+#btnrefresh,
+#btnValid {
+background-color: #4CAF50;
+color: #fff;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+padding: 10px 20px;
+cursor: pointer;
+margin-top: 20px;
+}
+
+#btnrefresh:hover,
+#btnValid:hover {
+background-color:#f2f2f2;
+}
+
+#typerant p {
+margin-bottom: 10px;
+}
+
+#error-msg {
+color: red;
+font-weight: bold;
+margin-top: 20px;
+}
+
+.success-msg {
+color: green;
+font-weight: bold;
+margin-top: 20px;
+}
